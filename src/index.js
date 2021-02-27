@@ -1,0 +1,11 @@
+import React from "react";
+
+import ReactDOM from "react-dom";
+
+import './style/style.css'
+import App from './js_modules/App'
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)

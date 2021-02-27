@@ -1,0 +1,101 @@
+@import 'variables.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #171927;
+}
+
+.title {
+    color: @main-color;
+    font-size: 30px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: @main-color;
+    font-size: 50px;
+    transform: translate(-50%,-50%);
+}
+
+.no-result {
+    font-size: 20px;
+    color: @main-color;
+}
+
+.breeds,
+.no-result {
+    margin-top: 15px;
+}
+
+.breeds__list {
+    background-color: #171927;
+    border-radius: 10px;
+    width: 200px;
+    color: @main-color;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid @main-color;
+}
+
+.cat-image {
+    height: 300px;
+    width: auto;
+}
+
+.search {
+    padding: 40px 0 0 50px;
+}
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px 10px 0;
+        border: 1px solid grey;
+    }
+}
+
+.cards__button,
+.single__button--back {
+    width: max-content;
+    margin: 10px 0 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: @main-color;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+
+
+.single {
+    width: min-content;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        color: @main-color;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
