@@ -20,12 +20,12 @@ export default function Cat(props) {
         return(
             <section className="single">
                 <div className="single__item">
-                    <Link to="/" className="single__button--back">Back</Link>
-                    <img className="cat-image" src={cat.url} alt={cat.breeds.name} style={{height: "700px"}}></img> 
+                    <Link to={`/?breed=${cat.breeds[0].id}`} className="single__button--back">Back</Link>
+                    <img className="cat-image__single" src={cat.url} alt={cat.breeds.name}></img> 
                     <h1 className="single__info"><b>{cat.breeds[0].name}</b></h1>
-                    <div className="single__info">Origin: {cat.breeds[0].origin}</div>
-                    <div className="single__info">{cat.breeds[0].temperament}</div>
-                    <div className="single__info">{cat.breeds[0].description}</div>
+                    <h2 className="single__info">Origin: {cat.breeds[0].origin}</h2>
+                    <h3 className="single__info">{cat.breeds[0].temperament}</h3>
+                    <p className="single__info">{cat.breeds[0].description}</p>
                 </div>
             </section>
         )

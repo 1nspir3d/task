@@ -9,7 +9,7 @@
 #root {
     min-height: 100vh;
     height: 100%;
-    background-color: #171927;
+    background-color: @bg-color;
 }
 
 .title {
@@ -37,7 +37,7 @@
 }
 
 .breeds__list {
-    background-color: #171927;
+    background-color: @bg-color;
     border-radius: 10px;
     width: 200px;
     color: @main-color;
@@ -49,6 +49,10 @@
 .cat-image {
     height: 300px;
     width: auto;
+
+    &__single {
+        height: 600px;
+    }
 }
 
 .search {
@@ -70,14 +74,15 @@
 }
 
 .cards__button,
-.single__button--back {
+.single__button--back,
+.load-more {
     width: max-content;
     margin: 10px 0 10px;
     padding: 15px;
     border-radius: 5px;
     background-color: @main-color;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
@@ -97,5 +102,60 @@
         color: @main-color;
         font-size: 20px;
         margin-top: 10px;
+    }
+}
+
+@media(max-width: 1600px) {
+    .cat-image__single {
+        height: 400px;
+    }
+}
+
+@media(max-width: 800px) {
+    .cat-image {
+        height: 200px;
+
+        &__single {
+            height: 350px;
+        }
+    }
+
+    .cards__button, 
+    .single__button--back, 
+    .load-more {
+        padding: 7px;
+    }
+
+}
+
+@media(max-width: 620px) {
+    .cat-image {
+        height: 150px;
+
+        &__single {
+            height: 250px;
+        }
+    }
+
+    .cards__button, 
+    .single__button--back, 
+    .load-more {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 450px) {
+    .cat-image {
+        height: 120px;
+
+        &__single {
+            height: 205px;
+        }
+    }
+
+    .cards__button, 
+    .single__button--back, 
+    .load-more {
+        padding: 4px;
     }
 }

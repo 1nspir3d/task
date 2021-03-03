@@ -10,8 +10,7 @@ export default function App() {
  return(
      <main className="app">
          <Router>
-            <Route exact path="/">
-                <Home />
+            <Route exact path="/" component={Home}>
             </Route>
             <Route exact path="/:id" component={Cat}>
             </Route>
