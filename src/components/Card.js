@@ -11,7 +11,7 @@ export default function Card(props) {
                         return(
                             <div key={index} className="cards__item">
                                 <img className="cat-image" alt='' src={item.url}></img>
-                                <Link to={`/${item.id}`} className="cards__button">View Details</Link>
+                                <Link to={`/task/${item.id}`} className="cards__button">View Details</Link>
                             </div>
                         )
                     }

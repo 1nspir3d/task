@@ -10,9 +10,9 @@ export default function App() {
  return(
      <main className="app">
          <Router>
-            <Route exact path="/" component={Home}>
+            <Route exact path="/task/" component={Home}>
             </Route>
-            <Route exact path="/:id" component={Cat}>
+            <Route exact path="/task/:id" component={Cat}>
             </Route>
         </Router>
      </main>
