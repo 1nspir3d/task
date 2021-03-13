@@ -8,13 +8,13 @@ import {
 
 export default function App() {
  return(
-     <main className="app">
-         <Router>
-            <Route exact path="/task/" component={Home}>
-            </Route>
-            <Route exact path="/task/:id" component={Cat}>
-            </Route>
-        </Router>
-     </main>
+    <main className="app">
+            <Router>
+                <Route exact path="/cat-browser" component={Home}>
+                </Route>
+                <Route exact path="/cat-browser/:id" component={Cat}>
+                </Route>
+            </Router>
+    </main>
  )
 }
